@@ -4,11 +4,12 @@ import SearchIcon from './search.svg'
 import MovieCard from './MovieCard';
 import { useEffect, useState } from 'react';
 
-const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
+
 
 function App() {
   const [searchMove, setSearchMove] = useState("");
   const [movies, setMovies] = useState([]);
+  const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
 
   useEffect(() => {
     searchMovies("Batman");
